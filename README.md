@@ -9,8 +9,10 @@
    poetry install
 
 2. Запуск:
+   - С использованием Python:
    ```bash
    python -m src.cli.split_msg --max-len=4096 examples/source.html
+   - С использованием Poetry:
    ```bash
    poetry run split-msg --max-len=4096 examples/source.html
 

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "msg_split"
+version = "1.0.0"
+description = "A utility for splitting HTML messages into fragments with fixed size (`max_len`)."
+authors = ["Ilias Iangurazov <ilias.iangurazov@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ilyasyzv/maddevs-test"
+repository = "hhttps://github.com/ilyasyzv/maddevs-test"
+keywords = ["html", "splitting", "fragments", "utility"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+beautifulsoup4 = "^4.12.2"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.4.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+split-msg = "src.cli.split_msg:process_file"

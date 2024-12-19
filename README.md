@@ -6,11 +6,13 @@
 
 1. Установите зависимости:
    ```bash
-   pip install -r requirements.txt
+   poetry install
 
 2. Запуск:
    ```bash
-   python -m src.cli.main --max-len=4096 examples/source.html
+   python -m src.cli.split_msg --max-len=4096 examples/source.html
+   ```bash
+   poetry run split-msg --max-len=4096 examples/source.html
 
 ## Тесты
 

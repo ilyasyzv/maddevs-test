@@ -1,5 +1,5 @@
 import unittest
-from src.msg_split.core import split_message
+from src.msg_split.msg_split import split_message
 from bs4 import BeautifulSoup
 from src.msg_split.exceptions import SplitMessageError
 

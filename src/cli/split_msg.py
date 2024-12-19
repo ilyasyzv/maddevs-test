@@ -1,5 +1,5 @@
 import click
-from ..msg_split.core import split_message
+from ..msg_split.msg_split import split_message
 
 @click.command()
 @click.option("--max-len", default=4096, type=int, help="Maximum length of each fragment")
